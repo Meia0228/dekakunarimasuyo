@@ -1,0 +1,25 @@
+body{
+    font-family: sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+article{
+    width: 400px;
+    margin: 20px auto;
+}
+
+article img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
