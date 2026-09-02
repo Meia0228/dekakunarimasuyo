@@ -1,0 +1,101 @@
+body{
+    font-family: sans-serif;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.title h2{
+    text-align: center;
+}
+header{
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+article{
+    width: 400px;
+    margin: 20px auto;
+}
+
+article img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* 画像 */
+article img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* 動画 */
+video{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* スマホ対応 */
+@media screen and (max-width:768px){
+
+    .title h2{
+        font-size:28px;
+    }
+
+    .logo img{
+        width:100%;
+        max-width:350px;
+        height:auto;
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    article{
+        width:95%;
+    }
+
+    .intro{
+        width:95%;
+        margin:auto;
+        text-align:center;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    h2{
+        font-size:24px;
+    }
+
+    p{
+        font-size:16px;
+    }
+}
+.gallery img {
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+    background: #000;   /* 余白を黒にする */
+}
+.latest article img,
+.pickup article img {
+    width: 100%;
+    max-width: 700px;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
